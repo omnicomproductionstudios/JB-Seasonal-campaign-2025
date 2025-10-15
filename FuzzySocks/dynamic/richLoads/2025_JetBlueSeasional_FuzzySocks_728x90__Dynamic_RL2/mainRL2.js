@@ -206,9 +206,15 @@ function animate() {
   myFT.dispatch('show_RL2');
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true })
   .set(["#cta"], { force3D: true, rotation: .001 })
-  .addLabel('frame_4')
+  .addLabel('frame_4', "0.5")
   // .from(['#main_content'], .6, { y:"+=250", ease: Back.easeOut.config(.3)})
-  .staggerTo(['#h4', '#priceHolder', '#cta', '#terms', '#terms_container'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 0.3, 'frame_4')
+  .from(['.copy1'], 0.5, {left: '-70px', ease: Power3.easeInOut }, 'frame_4')
+  .to(['.circle_plane'], 0.5, {scale: 1, ease: Power3.easeInOut }, 'frame_4')
+  .to(['.line2'], 0.5, {width: '100%', ease: Power1.easeInOut }, 'frame_4+=.5')
+  .to(['.circle_plane'], 1, {left: '18px', ease: Power3.easeInOut }, 'frame_4+=1')
+  .to(['.line1'], 1, {width: '60%', ease: Power1.easeInOut }, 'frame_4+=1')
+  .from(['.copy2'], 1, {left: '-250px', ease: Power1.easeInOut }, 'frame_4+=1')
+  .staggerTo(['#h4', '#priceHolder', '#cta', '#terms'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 0.3, 'frame_4+=1.7')
 
 }
 
