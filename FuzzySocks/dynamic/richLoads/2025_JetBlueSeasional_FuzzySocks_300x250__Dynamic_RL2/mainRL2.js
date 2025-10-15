@@ -75,7 +75,7 @@ function feedLoaded(feed){
 
     }else{
       // document.getElementById('text_holder').style.height = '150px'
-      document.getElementById('terms').style.top = '234px'
+      document.getElementById('terms').style.top = '235px'
 
     }
     try{
@@ -102,7 +102,7 @@ function setupContent() {
 
   if (deploy === false) {
 
-    h4[0].innerHTML = "Fly from<br><span class='city'>" + origin_formatted + "</span> <span class='to'>to</span> <span class='city'>" + destination_formatted + "</span>"; // - Populates main headline
+    h4[0].innerHTML = "Fly from<br><span class='city'>" + origin_formatted + "</span><br><span class='to'>to</span> <span class='city'>" + destination_formatted + "</span>"; // - Populates main headline
 
 
     oneWay[0].innerHTML = oneWay_txt; // - Populates the 'one-way' text
@@ -123,6 +123,10 @@ function setupContent() {
     // TESTING
 
     //  Longest possible places names
+
+    // origin_formatted = 'Origin Name'
+    // destination_formatted = 'Destination Name'
+    
     // origin_formatted = 'Boston'
     // destination_formatted = 'Florida'
 
@@ -151,7 +155,7 @@ function setupContent() {
       price[0].style.display = 'none';
       startingAt[0].style.display = 'none';
     } else {
-      h4[0].innerHTML = "Fly from<br><span class='city'>" + origin_formatted + "</span> <span class='to'>to</span> <span class='city'>" + destination_formatted + "</span>"; // - Populates main headline
+      h4[0].innerHTML = "Fly from<br><span class='city'>" + origin_formatted + "</span><br><span class='to'>to</span> <span class='city'>" + destination_formatted + "</span>"; // - Populates main headline
       
       // dynamic resize
       const myCity = document.getElementsByClassName('city')
@@ -163,14 +167,14 @@ function setupContent() {
 
       if (myCityCharLength > 22) {
       } else if (myCityCharLength > 14) {
-        myCity[0].style.fontSize = "15px"
-        myCity[1].style.fontSize = "15px"
+        myCity[0].style.fontSize = "14.5px"
+        myCity[1].style.fontSize = "14.5px"
       } else if (myCityCharLength > 10) {
         myCity[0].style.fontSize = "17px"
         myCity[1].style.fontSize = "17px"
       } else {
-        myCity[0].style.fontSize = "21px"
-        myCity[1].style.fontSize = "21px"
+        myCity[0].style.fontSize = "14.5px"
+        myCity[1].style.fontSize = "14.5px"
       }
 
     }
@@ -226,7 +230,7 @@ function animate() {
   .set(["#cta"], { force3D: true, rotation: .001 })
   .addLabel('frame_4')
   // .from(['#main_content'], .6, { y:"+=250", ease: Back.easeOut.config(.3)})
-  .staggerTo(['#h4', '#priceHolder', '#cta', '#terms', '#terms_container'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 0.3, 'frame_4')
+  .staggerTo(['#tagline', '#h4', '#priceHolder', '#cta', '#terms'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 0.2, 'frame_4+=0.5')
 }
 
 // CTA grow on hover

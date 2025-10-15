@@ -79,57 +79,42 @@ video {
 /* Text */
 
 #text_holder {
-  color: #0000aa;
+  color: #fff;
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 33.2px;
-  line-height: 36px;
-  letter-spacing: -0.1px;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.45px;
+  left: 25px;
+  top: 20px;
+  width: 300px;
 }
-#h1,
-#h2,
-#h3 {
-  width: 280px;
-  left: 15px;
-  top: 45px;
+#bg2{
+  transform: translateX(100%);
 }
-#h2{
-  top: 69px;
-  font-size: 22.9px;
-  line-height: 28px;
-}
-#h2 span{
-  letter-spacing: -0.3px;
-}
-
 #endframeBg {
   position: absolute;
-  top: 184px;
-  height: 250px;
+  top: 0px;
+  left: 0px;
+  height: 600px;
   width: 100%;
   background: #FFFFFF;
+  transform: translateX(100%);
 }
 
-#pinkRibbon {
-  position: relative; 
-  top: 0px;
-  height: 10px;
-  width: 100%; 
-  background: #dc7bff;
-}
 
 #blueBottomCard {
   background-color: #0000aa;
   width: 300px;
-  height: 58px;
+  height: 65px;
   left: 0px;
-  top: 193px;
+  top: 192px;
 }
 
 #logo {
-  width: 73px;
+  width: 56px;
   height: auto;
-  right: 15.7px;
-  top: 210px;
+  right: 13.7px;
+  top: 211px;
   position: absolute;
   z-index: 11;
 }
@@ -151,12 +136,12 @@ video {
 .terms{
   color: #fff;
   font-family: "ESKlarheitGrotesk Smbd";
-  font-size: 7.3px;
+  font-size: 8px;
   line-height: 7px;
   letter-spacing: -0.02em;
   left: 15px;
   width: 250px;
-  bottom: 17px;
+  bottom: 16px;
   z-index: 11;
 }
 .window{
