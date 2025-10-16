@@ -88,6 +88,9 @@ video {
   left: 15px;
   top: 31px;
 }
+#h1 span{
+  display: inline-block;
+}
 #bg2{
   transform: translateX(100%);
 }
@@ -134,13 +137,13 @@ video {
 }
 .terms{
   color: #fff;
+  position: absolute;
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
   line-height: 7px;
-  letter-spacing: -0.02em;
-  right: 6px;
-  width: 126px;
-  bottom: 15px;
+  letter-spacing: -0.01em;
+  right: 13px;
+  bottom: 5px;
   z-index: 11;
 }
 .window{

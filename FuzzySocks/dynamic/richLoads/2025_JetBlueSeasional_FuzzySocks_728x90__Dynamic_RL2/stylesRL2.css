@@ -81,59 +81,10 @@ video {
   font-family: "ESKlarheitGrotesk Xbd";
   src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
 }
-
-/*@font-face {
-  font-family: "DINOT";
-  src: url("./fonts/DINOT.woff");
-}*/
-
-
-.plane{
-  width: 37px;
-  left: 48px;
-  top: 35px;
-}
-.line1{
-  background-color: #0000aa;
-  height: 5px;
-  border-radius: 50px;
-  width: 0;
-  z-index: 1;
-}
-.line2{
-  background-color: #0000aa;
-  height: 5px;
-  border-radius: 50px;
-  width: 0;
-}
-.plane img{
-  width: 10px;
-  left: -1px;
-  top: -3.5px;
-  z-index: 1;
-  background-color: #fff;
-  border-radius: 50px;
-  border: #fff solid 1px;
-  transform: scale(0);
-}
-
-.copy1{
-  font-family: "ESKlarheitGrotesk Xbd";
-  top: 28px;
+#season{
   left: 18px;
-  letter-spacing: -0.5px;
-  font-size: 17px;
-  color: #0000aa;
+  top: 29px;
 }
-.copy2{
-  font-family: "ESKlarheitGrotesk Xbd";
-  top: 44.5px;
-  left: 17.5px;
-  letter-spacing: -0.5px;
-  font-size: 17.3px;
-  color: #0000aa;
-}
-
 #text_holder {
   width: 462px;
   display: flex;
@@ -261,44 +212,31 @@ video {
 #cta {
   align-self: center;
   width: 82px;
-  height: 10px;
+  height: 8px;
   background-color: #0000aa;
   border-radius: 4px;
   color: #fff;
   font-family: "ESKlarheitGrotesk Smbd";
   text-align: center;
   font-size: 10px;
-  line-height: 11px;
+  line-height: 8px;
   padding: 7px 0px;
   transform-origin: 50% 50%;
   position: relative;
   left: -103px;
-  top: 2px;
+  top: 1px;
 }
 
 .terms {
   color: #fff;
-  position: absolute;
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
   line-height: 7px;
-  letter-spacing: -0.01em;
-  right: 13px;
-  bottom: 5px;
-}
-
-#terms1 {
-  left: 527px;
-  top: 78px;
-  width: 300px;
-}
-
-#terms2 {
-  left: 16px;
-  top: 78px;
-  width: 300px;
-  color: #0000aa;
-  ;
+  letter-spacing: -0.02em;
+  right: 1px;
+  width: 126px;
+  bottom: 15px;
+  z-index: 11;
 }
 
 #logo {

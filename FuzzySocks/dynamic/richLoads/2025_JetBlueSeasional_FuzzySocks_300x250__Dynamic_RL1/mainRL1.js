@@ -98,6 +98,8 @@ function init() {
 }
 
 function animate() {
+  //make parent (base file) border black
+  window.parent.document.getElementById("border").style.borderColor="#000";
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
   tl.set('#h2', {y:20})
   tl.set('#h1 span', {y: 20, autoAlpha:0});
