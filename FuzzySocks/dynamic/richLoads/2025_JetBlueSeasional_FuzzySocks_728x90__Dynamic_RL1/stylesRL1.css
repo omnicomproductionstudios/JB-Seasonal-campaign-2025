@@ -116,7 +116,8 @@ video {
 #logo {
   width: 77px;
   height: auto;
-  right: 14px;
+  /* right: 14px; */
+  right: 58px;
   top: 32px;
   position: absolute;
   z-index: 11;
