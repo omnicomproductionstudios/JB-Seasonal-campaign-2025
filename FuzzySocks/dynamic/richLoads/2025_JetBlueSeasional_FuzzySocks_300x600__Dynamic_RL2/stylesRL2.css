@@ -82,60 +82,10 @@ video {
   font-family: "ESKlarheitGrotesk Xbd";
   src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
 }
-
-/*@font-face {
-  font-family: "DINOT";
-  src: url("./fonts/DINOT.woff");
-}*/
-
-
-
-.plane{
-  width: 71px;
-  left: 75px;
-  top: 64px;
+#season{
+  left: 15px;
+  top: 53px;
 }
-.line1{
-  background-color: #0000aa;
-  height: 11px;
-  border-radius: 50px;
-  width: 0;
-  z-index: 1;
-}
-.line2{
-  background-color: #0000aa;
-  height: 11px;
-  border-radius: 50px;
-  width: 0;
-}
-.plane img{
-  width: 20px;
-  left: -5px;
-  top: -5.5px;
-  z-index: 1;
-  background-color: #fff;
-  border-radius: 50px;
-  border: #fff solid 1px;
-  transform: scale(0);
-}
-
-.copy1{
-  font-family: "ESKlarheitGrotesk Xbd";
-  top: 51px;
-  left: 14px;
-  letter-spacing: -0.5px;
-  font-size: 33.2px;
-  color: #0000aa;
-}
-.copy2{
-  font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 33.2px;
-  top: 83.5px;
-  left: 14px;
-  letter-spacing: -0.5px;
-  color: #0000aa;
-}
-
 #text_holder {
   color: #0000aa;
   display: flex;
@@ -299,34 +249,9 @@ video {
   letter-spacing: -0.02em;
   left: 15px;
   width: 600px;
-  bottom: 14px;
+  bottom: 26px;
   z-index: 11;
 }
-
-
-#terms1 {
-  left: 22px;
-  top: 580px;
-  width: 300px;
-}
-
-
-#terms2 {
-  left: 212px;
-  top: 580px;
-  width: 300px;
-}
-
-
-
-
-
-
-#bgPanel {
-  top: 0px;
-  /*  z-index: 150;*/
-}
-
 
 .btn {
   position: absolute;

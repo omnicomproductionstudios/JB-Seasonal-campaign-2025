@@ -109,9 +109,10 @@ function animate() {
   //make parent (base file) border black
   window.parent.document.getElementById("border").style.borderColor="#000"
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
-  tl.set('#h2', {y:"20px"})
+  tl.set('#h2', {y:20})
+  tl.set('#h1 span', {y: 20, autoAlpha:0});
   tl.addLabel('frame1', 0)
-  .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
+  .staggerTo('#h1 span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeOut}, 0.3, 'frame1')
   .to('#h1', 0.3, { autoAlpha: 0, ease: Power1.easeOut }, "frame1+=4")
   .to('#bg2', 0.5, { autoAlpha: 1, x:0, ease: Power1.easeOut }, "frame1+=4")
   .addLabel('frame2', 'frame1+=4.5')
