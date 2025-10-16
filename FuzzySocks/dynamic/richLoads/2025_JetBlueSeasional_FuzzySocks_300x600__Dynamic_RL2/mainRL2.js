@@ -218,7 +218,7 @@ function animate() {
   .to('#cta',{autoAlpha:1, ease: "power1.inOut"}, 'frame_4+=0.5')
   .fromTo('#cta', 0.2, 
   { scale: 1, },
-  { scale: 1.05, yoyo: true, repeat: 1 }, 'frame_4+=1')
+  { scale: 1.05, yoyo: true, repeat: 1 }, 'frame_4+=1.3')
 }
 
 
