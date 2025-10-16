@@ -61,15 +61,10 @@ video {
   font-family: "ESKlarheitGrotesk Xbd";
   src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
 }
-
-#pinkRibbon {
-  position: absolute; 
-  top: 0px; 
-  height: 9px;
-  width: 100%; 
-  background: #FC3388;
+#season{
+  left: 15px;
+  top: 16px;
 }
-
 #text_holder {
   color: #0000AA;
   font-family: "ESKlarheitGrotesk Smbd";
@@ -207,7 +202,7 @@ video {
   letter-spacing: -0.02em;
   left: 14px;
   width: 250px;
-  bottom: 10px;
+  bottom: 20px;
   z-index: 11;
 }
 

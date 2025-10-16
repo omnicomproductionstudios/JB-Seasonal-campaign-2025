@@ -65,19 +65,6 @@ function feedLoaded(feed){
   console.log(feed)
   if(!thisFeedLoaded){
     thisFeedLoaded=true;
-    let partner_logo_src = feed[0].image_logo_300x250;
-
-    //testing swap between layouts for partner logo
-    partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz.png'
-
-    if(partner_logo_src == "n/a"){
-      //no partner logo included in feed, do nothing
-
-    }else{
-      // document.getElementById('text_holder').style.height = '150px'
-      document.getElementById('terms').style.top = '235px'
-
-    }
     try{
 
         lowestfare_faredollaramount = feed[0].lowestfare_faredollaramount;
@@ -227,11 +214,15 @@ function init() {
 function animate() {
   myFT.dispatch('show_RL2');
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true })
-  .set(["#cta"], { force3D: true, rotation: .001 })
-  .addLabel('frame_4')
-  // .from(['#main_content'], .6, { y:"+=250", ease: Back.easeOut.config(.3)})
-  .staggerTo(['#tagline', '#h4', '#priceHolder', '#cta', '#terms'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 0.2, 'frame_4+=0.5')
+  .set(["#cta"], { force3D: true, rotation: .001, autoAlpha:0 })
+  .addLabel('frame_4', "0.5")
+  .to(['#h4', '#priceHolder', '#season'], 0.5, { autoAlpha: 1, ease: "power1.inOut"}, 'frame_4')
+  .to('#cta',{autoAlpha:1, ease: "power1.inOut"}, 'frame_4+=0.5')
+  .fromTo('#cta', 0.2, 
+  { scale: 1, },
+  { scale: 1.05, yoyo: true, repeat: 1 }, 'frame_4+=1.3')
 }
+
 
 // CTA grow on hover
 

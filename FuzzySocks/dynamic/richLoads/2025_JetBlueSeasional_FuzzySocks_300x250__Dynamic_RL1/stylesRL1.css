@@ -88,6 +88,9 @@ video {
   top: 20px;
   width: 300px;
 }
+#h1 span{
+  display: block;
+}
 #bg2{
   transform: translateX(100%);
 }
@@ -139,9 +142,9 @@ video {
   font-size: 8px;
   line-height: 7px;
   letter-spacing: -0.02em;
-  left: 15px;
+  left: 14px;
   width: 250px;
-  bottom: 16px;
+  bottom: 10px;
   z-index: 11;
 }
 .window{
