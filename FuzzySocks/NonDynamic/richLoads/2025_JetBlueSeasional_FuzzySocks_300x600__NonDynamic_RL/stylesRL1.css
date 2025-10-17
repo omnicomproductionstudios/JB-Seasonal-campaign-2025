@@ -79,89 +79,83 @@ video {
 /* Text */
 
 #text_holder {
-  color: #0000aa;
+  color: #ffffff;
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 44.5px;
-  line-height: 47px;
+  font-size: 40px;
+  line-height: 40.5px;
   letter-spacing: -1px;
-}
-#h1,
-#h2,
-#h3 {
+  top: 49px;
+  left: 36px;
   width: 300px;
-  left: 15px;
-  top: 162px;
 }
-#h2{
-  top: 192px;
-  font-size: 30px;
-  line-height: 35.4px;
-  letter-spacing: -0.7px;
+#h1 span{
+  display: block;
 }
-#h2 span{
-  letter-spacing: -0.3px;
+#h3{
+  color: #0000aa;
+  z-index: 1;
+  font-size: 30.6px;
+  top: 5px;
+  line-height: 30.2px;
 }
-
+#bg2{
+  transform: translateX(100%);
+}
 #endframeBg {
   position: absolute;
-  top: 170px;
+  top: 0px;
+  left: 0px;
   height: 600px;
   width: 100%;
   background: #FFFFFF;
+  transform: translateX(100%);
 }
-
-#pinkRibbon {
-  position: relative; 
-  top: 453px;
-  height: 10px;
-  width: 100%; 
-  background: #dc7bff;
-}
-
 #blueBottomCard {
   background-color: #0000aa;
   width: 300px;
-  height: 137px;
+  height: 150px;
   left: 0px;
+  position: absolute;
   bottom: 0;
 }
 
 #logo {
-  width: 89px;
+  width: 100px;
   height: auto;
-  left: 14px;
-  bottom: 81px;
+  right: 26px;
+  bottom: 73px;
   position: absolute;
   z-index: 11;
 }
 
 #cta {
-  width: 107.7px;
-  height: 29.13px;
-  bottom: 81px;
-  left: 176px;
-  background-color: #fff;
-  border-radius: 4px;
+  top: 222px;
+  left: 35px;
+  width: 152px;
+  height: 25px;
+  background-color: #0000aa;
+  border-radius: 7px;
+  color: #fff;
   font-family: "ESKlarheitGrotesk Smbd";
-  color: #0000aa;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.374px;
+  padding: 9px 0px;
+  transform-origin: 50% 50%;
 }
 .terms{
   color: #fff;
   font-family: "ESKlarheitGrotesk Smbd";
-  font-size: 7.3px;
+  font-size: 9.85px;
   line-height: 7px;
   letter-spacing: -0.02em;
-  left: 16px;
+  left: 15px;
   width: 600px;
-  bottom: 35px;
+  bottom: 28px;
   z-index: 11;
 }
 .window{
   width: 300px;
   height: 600px;
-  z-index: -1;
 }

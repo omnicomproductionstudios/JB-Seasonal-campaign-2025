@@ -79,85 +79,79 @@ video {
 /* Text */
 
 #text_holder {
-  color: #0000aa;
+  color: #ffffff;
   font-family: "ESKlarheitGrotesk Xbd";
   font-size: 30px;
-  line-height: 32px;
+  line-height: 30px;
   letter-spacing: -1px;
+  top: 50px;
+  left: 11px;
+  width: 100%;
 }
-#h1,
-#h2,
-#h3 {
-  width: 160px;
-  left: 9px;
-  top: 191px;
+#h1 span{
+  display: block;
 }
-#h2{
-  top: 196px;
-  font-size: 21.5px;
-  line-height: 25.8px;
-  letter-spacing: -0.7px;
+#bg2{
+  transform: translateX(100%);
 }
-#h2 span{
-  letter-spacing: -0.3px;
+#h3{
+  color: #0000aa;
+  z-index: 1;
+  font-size: 20.5px;
+  top: 1px;
+  line-height: 20.5px;
 }
-
 #endframeBg {
   position: absolute;
-  top: 170px;
+  top: 0px;
+  left: 0px;
   height: 600px;
   width: 100%;
   background: #FFFFFF;
+  transform: translateX(100%);
 }
-
-#pinkRibbon {
-  position: relative; 
-  top: 451px;
-  height: 10px;
-  width: 100%; 
-  background: #dc7bff;
-}
-
 #blueBottomCard {
   background-color: #0000aa;
   width: 160px;
-  height: 139px;
+  height: 150px;
   left: 0px;
   bottom: 0;
 }
 
 #logo {
-  width: 80px;
+  width: 98px;
   height: auto;
-  left: 41px;
-  bottom: 95px;
+  left: 32px;
+  bottom: 98px;
   position: absolute;
   z-index: 11;
 }
 
 #cta {
-  width: 85px;
-  height: 22.99px;
-  bottom: 55px;
-  left: 38px;
-  background-color: #fff;
-  border-radius: 4px;
-  font-family: "ESKlarheitGrotesk Smbd";
-  color: #0000aa;
-  font-size: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    left: 10px;
+    top: 184px;
+    width: 103px;
+    height: 20px;
+    background-color: #0000aa;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "ESKlarheitGrotesk Smbd";
+    text-align: center;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: -0.374px;
+    padding: 5px 0px;
+    transform-origin: 50% 50%;
 }
 .terms{
   color: #fff;
   font-family: "ESKlarheitGrotesk Smbd";
-  font-size: 7.3px;
+  font-size: 7.1px;
   line-height: 7px;
   letter-spacing: -0.02em;
-  left: 15px;
-  width: 600px;
-  bottom: 26px;
+  left: 12px;
+  width: 160px;
+  bottom: 25px;
   z-index: 11;
 }
 .window{

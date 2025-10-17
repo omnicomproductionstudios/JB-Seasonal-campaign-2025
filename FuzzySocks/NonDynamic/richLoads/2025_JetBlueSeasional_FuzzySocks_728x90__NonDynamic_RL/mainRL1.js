@@ -23,17 +23,24 @@ myFT.on('instantads',function(){
 init()
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
-
-  tl.set(['#h1, #h2'], {y:"20px"})
-
+  tl.set(["#cta"], { force3D: true, rotation: .001, autoAlpha:0 })
+  tl.set(['#h2', '#h3'], {y:20})
+  tl.set('#h1 span', {y: 20, autoAlpha:0});
 
   tl.addLabel('frame1', 0)
-  .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
+  .staggerTo('#h1 span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeOut}, 0.3, 'frame1+=0.5')
+  .to('#h1', 0.3, { autoAlpha: 0, ease: Power1.easeOut }, "frame1+=4")
+  .to('#bg2', 0.5, { autoAlpha: 1, x:0, ease: Power1.easeOut }, "frame1+=4")
+  .addLabel('frame2', 'frame1+=4.5')
+  .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2")
 
-  .addLabel('frame2', 'frame1+=4')
-  .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
-  .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
-
+  .addLabel('frame_END', "frame2+=4")
+  .to('#endframeBg', 0.5 ,{ x:0, ease: Power1.easeOut}, 'frame_END')
+  .to('#h3', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame_END+=0.5")
+  .to('#cta',{autoAlpha:1, ease: "power1.inOut"}, 'frame_4+=0.2')
+  .fromTo('#cta', 0.2, 
+  { scale: 1, },
+  { scale: 1.05, yoyo: true, repeat: 1 }, 'frame_4+=1')
 }
 
 function setRollover() {
