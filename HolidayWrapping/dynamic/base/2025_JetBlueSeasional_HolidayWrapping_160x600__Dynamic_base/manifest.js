@@ -5,8 +5,8 @@ FT.manifest({
 	"clickTagCount": 3,
 	"hideBrowsers": ["ie8"],
 	"richLoads": [
-		{"name": "RL1", "src": "2025_JetBlueSeasional_FuzzySocks_160x600__Dynamic_RL1"},
-		{"name": "RL2", "src": "2025_JetBlueSeasional_FuzzySocks_160x600__Dynamic_RL2"}
+		{"name": "RL1", "src": "2025_JetBlueSeasional_HolidayWrapping_160x600__Dynamic_RL1"},
+		{"name": "RL2", "src": "2025_JetBlueSeasional_HolidayWrapping_160x600__Dynamic_RL2"}
 	],
     "instantAds": [
 		{"name": "RL1", 						"type": "richLoad"},
