@@ -87,6 +87,8 @@ video {
 #season{
   top: 52px;
   left: 10px;
+  width: 140px;
+  height: 49.17px;
 }
 #text_holder {
   display: flex;
@@ -321,3 +323,4 @@ video {
   top: -7px !important;
   position: relative !important;
 }
+

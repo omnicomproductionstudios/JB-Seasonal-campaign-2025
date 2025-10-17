@@ -150,3 +150,8 @@ video {
   height: 600px;
   z-index: -1;
 }
+
+img{
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+}

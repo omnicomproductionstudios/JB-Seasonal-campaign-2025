@@ -64,6 +64,7 @@ video {
 #season{
   left: 15px;
   top: 16px;
+  width: 130px;
 }
 #text_holder {
   color: #0000AA;

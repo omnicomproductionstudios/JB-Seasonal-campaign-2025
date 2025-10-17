@@ -84,6 +84,7 @@ video {
 #season{
   left: 18px;
   top: 29px;
+  width: 90px;
 }
 #text_holder {
   width: 462px;

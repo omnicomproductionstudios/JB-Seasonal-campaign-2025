@@ -83,8 +83,10 @@ video {
   src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
 }
 #season{
-  left: 15px;
-  top: 53px;
+    left: 15px;
+    top: 53px;
+    width: 177px;
+    height: 62px;
 }
 #text_holder {
   color: #0000aa;
