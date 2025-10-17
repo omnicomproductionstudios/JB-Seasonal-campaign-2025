@@ -215,9 +215,11 @@ function animate() {
   myFT.dispatch('show_RL2');
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true })
   .set(["#cta"], { force3D: true, rotation: .001, autoAlpha:0 })
+  .set('#terms', {autoAlpha:0})
   .addLabel('frame_4', "0.5")
   .to(['#h4', '#priceHolder', '#season'], 0.5, { autoAlpha: 1, ease: "power1.inOut"}, 'frame_4')
   .to('#cta',{autoAlpha:1, ease: "power1.inOut"}, 'frame_4+=0.5')
+  .to('#terms',{autoAlpha:1, ease: "power1.inOut"}, 'frame_4+=0.7')
   .fromTo('#cta', 0.2, 
   { scale: 1, },
   { scale: 1.05, yoyo: true, repeat: 1 }, 'frame_4+=1.3')
