@@ -98,7 +98,7 @@ function setupContent() {
     // -------------------
 
     if (showDefault) {
-      h4[0].innerHTML = 'Over 100<br>destinations.<br>Always low<br>fares.'; // - Populates main headline
+      h4[0].innerHTML = '100+<br>destinations.<br>And great<br>fares to get<br>there.'; // - Populates main headline
       h4[0].classList.add('defaultEndframe')
       // reposition CTA
       cta[0].style.top = "-39px"
